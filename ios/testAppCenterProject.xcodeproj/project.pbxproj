@@ -19,6 +19,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* testAppCenterProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* testAppCenterProjectTests.m */; };
 		742B31B3531936ECD0D1513D /* libPods-testAppCenterProject-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F79A88D3A5E811A74988DF4A /* libPods-testAppCenterProject-tvOS.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		BD3AF63325981E5300EEFE3F /* AppCenter-Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD3AF63225981E5300EEFE3F /* AppCenter-Config.plist */; };
 		DA56C7CCE4A1A23594D556BE /* libPods-testAppCenterProject-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC089FED8D0EB8EDA0FED0C5 /* libPods-testAppCenterProject-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		A3D01D338F2EEDB604A8603C /* Pods-testAppCenterProject-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAppCenterProject-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-testAppCenterProject-tvOSTests/Pods-testAppCenterProject-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A8A33A9D62B023DEBBD40D19 /* Pods-testAppCenterProject-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAppCenterProject-tvOS.release.xcconfig"; path = "Target Support Files/Pods-testAppCenterProject-tvOS/Pods-testAppCenterProject-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		BA089C2BC149C954FD35AA30 /* Pods-testAppCenterProject-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAppCenterProject-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-testAppCenterProject-tvOS/Pods-testAppCenterProject-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BD3AF63225981E5300EEFE3F /* AppCenter-Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppCenter-Config.plist"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F79A88D3A5E811A74988DF4A /* libPods-testAppCenterProject-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testAppCenterProject-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,7 +119,6 @@
 				A3D01D338F2EEDB604A8603C /* Pods-testAppCenterProject-tvOSTests.debug.xcconfig */,
 				FC6B3C9517BA31807117FF13 /* Pods-testAppCenterProject-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -175,6 +176,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				BD3AF63225981E5300EEFE3F /* AppCenter-Config.plist */,
 				13B07FAE1A68108700A75B9A /* testAppCenterProject */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* testAppCenterProjectTests */,
@@ -342,6 +344,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				BD3AF63325981E5300EEFE3F /* AppCenter-Config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
