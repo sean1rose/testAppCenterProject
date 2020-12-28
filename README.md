@@ -1,6 +1,6 @@
 # testAppCenterProject
 React Native project dfor setting up CI/CD with App Center
 
-iOS: [![Build status](https://build.appcenter.ms/v0.1/apps/d7706097-db8a-40f6-a53b-1fddf8027ee4/branches/dev/badge)](https://appcenter.ms)
+iOS: [![Build status](https://build.appcenter.ms/v0.1/apps/8f5b75b1-7f9f-4280-84cb-b30da65332a2/branches/dev/badge)](https://appcenter.ms)
 
-Android: [![Build status](https://build.appcenter.ms/v0.1/apps/da4f1550-07d0-416b-8cc2-d994bf872bd9/branches/dev/badge)](https://appcenter.ms)
+Android: [![Build status](https://build.appcenter.ms/v0.1/apps/07e41a82-fc1d-4d1e-95a4-58fe78a1d762/branches/dev/badge)](https://appcenter.ms)
