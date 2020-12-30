@@ -88,14 +88,6 @@ export default class App extends React.Component {
             Crashes.generateTestCrash();
           }} />
         {/* sending event to app center: so from app center, we know when this event is happening  */}
-        <Button
-          title="Calculate inflation"
-          onPress={() =>
-            Analytics.trackEvent('calculate inflation', {
-              Internet: 'Wifi',
-              GPS: 'off',
-            })
-          } />
         <TextInput
           placeholder="Current inflation rate"
           style={styles.textBox}
