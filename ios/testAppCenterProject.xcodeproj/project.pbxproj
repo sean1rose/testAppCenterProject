@@ -19,6 +19,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* testAppCenterProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* testAppCenterProjectTests.m */; };
 		742B31B3531936ECD0D1513D /* libPods-testAppCenterProject-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F79A88D3A5E811A74988DF4A /* libPods-testAppCenterProject-tvOS.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		BD1827A2259BBB650038CFD3 /* testAppCenterProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1827A1259BBB650038CFD3 /* testAppCenterProjectUITests.m */; };
 		BD3AF63325981E5300EEFE3F /* AppCenter-Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD3AF63225981E5300EEFE3F /* AppCenter-Config.plist */; };
 		DA56C7CCE4A1A23594D556BE /* libPods-testAppCenterProject-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC089FED8D0EB8EDA0FED0C5 /* libPods-testAppCenterProject-tvOSTests.a */; };
 /* End PBXBuildFile section */
@@ -37,6 +38,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "testAppCenterProject-tvOS";
+		};
+		BD1827A4259BBB650038CFD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = testAppCenterProject;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -63,6 +71,9 @@
 		A3D01D338F2EEDB604A8603C /* Pods-testAppCenterProject-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAppCenterProject-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-testAppCenterProject-tvOSTests/Pods-testAppCenterProject-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A8A33A9D62B023DEBBD40D19 /* Pods-testAppCenterProject-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAppCenterProject-tvOS.release.xcconfig"; path = "Target Support Files/Pods-testAppCenterProject-tvOS/Pods-testAppCenterProject-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		BA089C2BC149C954FD35AA30 /* Pods-testAppCenterProject-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAppCenterProject-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-testAppCenterProject-tvOS/Pods-testAppCenterProject-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BD18279F259BBB650038CFD3 /* testAppCenterProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testAppCenterProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD1827A1259BBB650038CFD3 /* testAppCenterProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testAppCenterProjectUITests.m; sourceTree = "<group>"; };
+		BD1827A3259BBB650038CFD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD3AF63225981E5300EEFE3F /* AppCenter-Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppCenter-Config.plist"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -101,6 +112,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA56C7CCE4A1A23594D556BE /* libPods-testAppCenterProject-tvOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD18279C259BBB650038CFD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +198,7 @@
 				13B07FAE1A68108700A75B9A /* testAppCenterProject */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* testAppCenterProjectTests */,
+				BD1827A0259BBB650038CFD3 /* testAppCenterProjectUITests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				003AC7AB4F2D96C463BE572F /* Pods */,
@@ -196,8 +215,18 @@
 				00E356EE1AD99517003FC87E /* testAppCenterProjectTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* testAppCenterProject-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* testAppCenterProject-tvOSTests.xctest */,
+				BD18279F259BBB650038CFD3 /* testAppCenterProjectUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BD1827A0259BBB650038CFD3 /* testAppCenterProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BD1827A1259BBB650038CFD3 /* testAppCenterProjectUITests.m */,
+				BD1827A3259BBB650038CFD3 /* Info.plist */,
+			);
+			path = testAppCenterProjectUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +312,24 @@
 			productReference = 2D02E4901E0B4A5D006451C7 /* testAppCenterProject-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BD18279E259BBB650038CFD3 /* testAppCenterProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD1827A8259BBB650038CFD3 /* Build configuration list for PBXNativeTarget "testAppCenterProjectUITests" */;
+			buildPhases = (
+				BD18279B259BBB650038CFD3 /* Sources */,
+				BD18279C259BBB650038CFD3 /* Frameworks */,
+				BD18279D259BBB650038CFD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD1827A5259BBB650038CFD3 /* PBXTargetDependency */,
+			);
+			name = testAppCenterProjectUITests;
+			productName = testAppCenterProjectUITests;
+			productReference = BD18279F259BBB650038CFD3 /* testAppCenterProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -293,19 +340,29 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 96C6646DZG;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 96C6646DZG;
 						LastSwiftMigration = 1120;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 96C6646DZG;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E48F1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 96C6646DZG;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+					BD18279E259BBB650038CFD3 = {
+						CreatedOnToolsVersion = 12.3;
+						DevelopmentTeam = 96C6646DZG;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 				};
 			};
@@ -326,6 +383,7 @@
 				00E356ED1AD99517003FC87E /* testAppCenterProjectTests */,
 				2D02E47A1E0B4A5D006451C7 /* testAppCenterProject-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* testAppCenterProject-tvOSTests */,
+				BD18279E259BBB650038CFD3 /* testAppCenterProjectUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -357,6 +415,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2D02E48E1E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD18279D259BBB650038CFD3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -593,6 +658,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BD18279B259BBB650038CFD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD1827A2259BBB650038CFD3 /* testAppCenterProjectUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -606,6 +679,11 @@
 			target = 2D02E47A1E0B4A5D006451C7 /* testAppCenterProject-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
+		BD1827A5259BBB650038CFD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* testAppCenterProject */;
+			targetProxy = BD1827A4259BBB650038CFD3 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -614,6 +692,7 @@
 			baseConfigurationReference = 22A0E3E312083B5ADA67DDFA /* Pods-testAppCenterProject-testAppCenterProjectTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 96C6646DZG;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -638,6 +717,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 96C6646DZG;
 				INFOPLIST_FILE = testAppCenterProjectTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -659,15 +739,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96C6646DZG;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = testAppCenterProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.seanrose.testAppCenterProject;
 				PRODUCT_NAME = testAppCenterProject;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -682,16 +764,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96C6646DZG;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = testAppCenterProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.seanrose.testAppCenterProject;
 				PRODUCT_NAME = testAppCenterProject;
 				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = NO;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -707,6 +793,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 96C6646DZG;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "testAppCenterProject-tvOS/Info.plist";
@@ -736,6 +823,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 96C6646DZG;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "testAppCenterProject-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -762,6 +850,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 96C6646DZG;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "testAppCenterProject-tvOSTests/Info.plist";
@@ -790,6 +879,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 96C6646DZG;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "testAppCenterProject-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -919,6 +1009,58 @@
 			};
 			name = Release;
 		};
+		BD1827A6259BBB650038CFD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 96C6646DZG;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = testAppCenterProjectUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = sean1rose.testAppCenterProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = testAppCenterProject;
+			};
+			name = Debug;
+		};
+		BD1827A7259BBB650038CFD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 96C6646DZG;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = testAppCenterProjectUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = sean1rose.testAppCenterProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = testAppCenterProject;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -963,6 +1105,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD1827A8259BBB650038CFD3 /* Build configuration list for PBXNativeTarget "testAppCenterProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD1827A6259BBB650038CFD3 /* Debug */,
+				BD1827A7259BBB650038CFD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
