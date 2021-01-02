@@ -10,11 +10,13 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-community/push-notification-ios": "^1.8.0",
     "appcenter": "4.0.0",
     "appcenter-analytics": "4.0.0",
     "appcenter-crashes": "4.0.0",
     "react": "16.13.1",
-    "react-native": "0.63.4"
+    "react-native": "0.63.4",
+    "react-native-push-notification": "^7.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
