@@ -17,7 +17,8 @@ import {
   Text,
   StatusBar,
   Button,
-  TextInput
+  TextInput,
+  Alert
 } from 'react-native';
 
 import {
@@ -27,6 +28,8 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+
+import NotificationService from './src/services/NotificationService';
 
 export default class App extends React.Component {
   constructor() {
@@ -42,6 +45,15 @@ export default class App extends React.Component {
       difference: 0,
     };
     this.checkPrevSession();
+    this.notification = new NotificationService(this.onNotification);
+  }
+
+  onNotification = (note) => {
+    Alert.alert(note.title, note.message);
+  }
+
+  handlePerm(perms) {
+    Alert.alert("Permissions", JSON.stringify(perms));
   }
 
   calculateInflationImpact(value, inflationRate, time) {
@@ -81,64 +93,27 @@ export default class App extends React.Component {
   }
   render() {
     return (
-      <View style={styles.container}>
+      <View style={{backgroundColor: 'white'}}>
         <Button
-          title="Crash app"
+          title={'SPACE'}
           onPress={() => {
-            Crashes.generateTestCrash();
-          }} />
-        {/* sending event to app center: so from app center, we know when this event is happening  */}
-        <TextInput
-          placeholder="Current inflation rate"
-          style={styles.textBox}
-          keyboardType="decimal-pad"
-          onChangeText={(inflationRate) => this.setState({inflationRate})}
-        />
-        <TextInput
-          placeholder="Current risk free rate"
-          style={styles.textBox}
-          keyboardType="decimal-pad"
-          onChangeText={(riskFreeRate) => this.setState({riskFreeRate})}
-        />
-        <TextInput
-          placeholder="Amount you want to save"
-          style={styles.textBox}
-          keyboardType="decimal-pad"
-          onChangeText={(amount) => this.setState({amount})}
-        />
-        <TextInput
-          placeholder="For how long (in years) will you save?"
-          style={styles.textBox}
-          keyboardType="decimal-pad"
-          onChangeText={(timeInYears) => this.setState({timeInYears})}
-        />
-        <Button
-          title="Calculate inflation"
-          onPress={() => {
-            this.calculate();
-            Analytics.trackEvent('calculate_inflation', {
-              Internet: 'WiFi',
-              GPS: 'Off',
-            });
+            this.notification.localNotification();
           }}
         />
-        <Text style={styles.label}>
-          {this.state.timeInYears} years from now you will still have $
-          {this.state.amount} but it will only be worth $
-          {this.state.afterInflation}.
-        </Text>
-        <Text style={styles.label}>
-          But if you invest it at a risk free rate you will have $
-          {this.state.atRiskFree}.
-        </Text>
-        <Text style={styles.label}>
-          Which will be worth ${this.state.atRiskFreeAfterInflation} after
-          inflation.
-        </Text>
-        <Text style={styles.label}>
-          A difference of: ${this.state.difference}.
-        </Text>
+        <Button
+          title={'Local Notification'}
+          onPress={() => {
+            this.notification.localNotification();
+          }}
+        />
+        <Button
+          title={'Sceduled 30s Notification'}
+          onPress={() => {
+            this.notification.scheduleNotification();
+          }}
+        />
       </View>
+
     );
   }
 };
